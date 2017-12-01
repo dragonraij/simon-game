@@ -13,7 +13,7 @@ class Simon {
         this.correctGuesses = 0;
     }
     
-    get colors (){
+    get getColors (){
         return this.colors;
     }
     
@@ -41,23 +41,5 @@ class Simon {
     
 }
 
-class Employee {
-  constructor() {
-    this.alive = true;
-  }
+export default Simon;
 
-  setSkills(skills=[]) {
-    const defaultSkills = ['JavaScript'];
-    this.skills = skills.concat(defaultSkills);
-  }
-
-  sayHello() {
-    window.setTimeout(() => {
-      console.log('Hello World!');
-    }, 2000);
-  }
-
-  get name() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-}

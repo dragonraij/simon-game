@@ -1,0 +1,129 @@
+p{
+    color: lightgray;
+}
+
+#circle-container {
+  width: 400px;
+  height: 400px;
+  position:relative;
+  z-index:1;
+  margin:0 auto;"
+  
+}
+
+.fill-circle {
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  z-index:5;
+  background-color:#fff;
+  border-radius:200px;
+  margin:100px 0px 0px 100px;
+  background-image: url('https://darko.co.za/circle-fill.png');
+  background-repeat:no-repeat;
+}
+
+.dot {
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  position:absolute;
+  z-index:10;
+}
+
+.name {
+  background: white;
+  height:10px;
+  margin:220px 0 0 150px;
+  position:absolute;
+  z-index:10;
+}
+
+.stop {
+  background: #1ba8e0;
+  margin:200px 0 0 240px;
+  width:25px;
+  height:25px;
+  border-radius:25px;
+  position:absolute;
+  z-index:10;
+  
+}
+
+.stop >p {
+  text-align: left;
+  line-height:10px;
+  margin-top:30px;
+}
+
+.start {
+  background: #fecc0b;
+  margin:200px 0 0 140px;
+  width:25px;
+  height:25px;
+  border-radius:25px;
+  position:absolute;
+  z-index:10;
+  
+}
+
+.btnShadow{
+    box-shadow: 2px 2px  grey;
+}
+
+.start >p {
+  text-align: center;
+  line-height:10px;
+  margin-top:30px;
+}
+
+.counter {
+  background: #de232c;
+  margin:140px 0 0 180px;
+  width:40px;
+  height:35px;
+  border-radius:5px;
+  position:absolute;
+  z-index:10;
+}
+.counter >p {
+  color: white;
+  text-align: center;
+  line-height:0px;
+  margin-top:13px;
+}
+
+.quarter {
+  width: 200px;
+  height: 200px;
+  
+}
+
+.green {
+  border-top-left-radius: 400px;
+  background: #1fb14e;
+  float: left
+}
+
+.blue {
+  border-top-right-radius: 400px;
+  background: #1ba8e0;
+  float: right
+}
+
+.yellow {
+  border-bottom-left-radius: 400px;
+  background: #fecc0b;
+  float: left
+}
+
+.red {
+  border-bottom-right-radius: 400px;
+  background: #de232c;
+  float: right
+}
+
+body {
+  font-family: Tahoma, Sans-Serif;
+  
+}
