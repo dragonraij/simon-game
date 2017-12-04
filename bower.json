@@ -1,0 +1,21 @@
+{
+  "name": "simon",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Raj Prasad <rajeshwarrprasad@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dragonraij/simon-game",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "moment": "^2.19.3"
+  }
+}

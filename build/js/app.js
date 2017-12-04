@@ -68,9 +68,18 @@ var _simon2 = _interopRequireDefault(_simon);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $(document).ready(function () {
+    var _this = this;
+
     var simonGame = new _simon2.default();
 
     $("#display").text("!!");
+
+    $(".strict").addClass("btnShadow");
+    $(".start").addClass("btnShadow");
+
+    $(".start").on("hover", function () {
+        _this.toggleClass("btnShadow");alert("I was click");
+    });
 
     $("p").on("click", function () {
         alert("was clicked");

@@ -6,6 +6,9 @@ $(document).ready(function(){
     
     $("#display").text("!!");
     
+    $(".strict").addClass("btnShadow");
+    $(".start").addClass("btnShadow");
+    
     $("p").on("click", () => {
       alert("was clicked");
     });

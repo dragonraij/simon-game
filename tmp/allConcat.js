@@ -6,6 +6,11 @@ $(document).ready(function(){
     
     $("#display").text("!!");
     
+    $(".strict").addClass("btnShadow");
+    $(".start").addClass("btnShadow");
+    
+    $(".start").on("hover", ()=>{ this.toggleClass("btnShadow"); alert("I was click")});
+    
     $("p").on("click", () => {
       alert("was clicked");
     });
