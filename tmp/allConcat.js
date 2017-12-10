@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(".strict").addClass("btnShadow");
     $(".start").addClass("btnShadow");
     
-    $(".start").on("hover", ()=>{ this.toggleClass("btnShadow"); alert("I was click")});
+    function(){return 0}
     
     $("p").on("click", () => {
       alert("was clicked");

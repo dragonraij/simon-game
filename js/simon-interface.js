@@ -9,6 +9,8 @@ $(document).ready(function(){
     $(".strict").addClass("btnShadow");
     $(".start").addClass("btnShadow");
     
+    
+    
     $("p").on("click", () => {
       alert("was clicked");
     });

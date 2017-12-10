@@ -33,6 +33,7 @@ p{
 
 .name {
   background: white;
+  color:white;
   height:10px;
   margin:220px 0 0 150px;
   position:absolute;
@@ -101,25 +102,29 @@ p{
 
 .green {
   border-top-left-radius: 400px;
-  background: #1fb14e;
+  /* background: #1fb14e;*/
+  background:white;
   float: left
 }
 
 .blue {
   border-top-right-radius: 400px;
-  background: #1ba8e0;
+  /*background: #1ba8e0;*/
+  background:white;
   float: right
 }
 
 .yellow {
   border-bottom-left-radius: 400px;
-  background: #fecc0b;
+  /*background: #fecc0b;*/
+  background:white;
   float: left
 }
 
 .red {
   border-bottom-right-radius: 400px;
-  background: #de232c;
+  /*background: #de232c;*/
+  background:white;
   float: right
 }
 

@@ -8,10 +8,34 @@ var utilities = require('gulp-util');
 var babelify =require('babelify');
 var del = require('del');
 var lib = require('bower-files')();
+var browserSync = require('browser-sync').create();
 
 
 var buildProduction = utilities.env.production;
 
+
+gulp.task('serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./simon/",
+      index: "index.html",
+      port: 8082
+
+    }
+  });
+});
+
+gulp.task('watch', function() {
+  gulp.watch(['js/*.js'], ['jsBuild']);
+  gulp.watch(['bower.json'], ['bowerBuild']);
+  
+});
+
+
+gulp.task('jsBuild', ['jsBrowserify', 'jshint']);
+
+
+gulp.task('bowerBuild', ['bower']);
 
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
