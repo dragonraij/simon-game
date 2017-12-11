@@ -17,25 +17,25 @@ var buildProduction = utilities.env.production;
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: "./simon/",
+      baseDir: "./",
       index: "index.html",
       port: 8082
 
     }
   });
-});
 
-gulp.task('watch', function() {
   gulp.watch(['js/*.js'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
-  
+
 });
 
+gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function(){
+  browserSync.reload();
+});
 
-gulp.task('jsBuild', ['jsBrowserify', 'jshint']);
-
-
-gulp.task('bowerBuild', ['bower']);
+gulp.task('bowerBuild', ['bower'], function(){
+  browserSync.reload();
+});
 
 gulp.task('jsBrowserify', ['concatInterface'], function() {
   return browserify({ entries: ['./tmp/allConcat.js'] })
